@@ -8,7 +8,7 @@ const NavbarComponent = () => {
         <Navbar expand="lg" className="">
           <Container className="box_1620">
             <Navbar.Brand href="/#">
-              <span className="text-white">DK.</span>
+              <span className="text-white ml-3">DK.</span>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
@@ -16,10 +16,10 @@ const NavbarComponent = () => {
                 <Nav.Link className="text-white" href="#home">
                   Home
                 </Nav.Link>
-                <Nav.Link className="text-white" href="#home">
+                <Nav.Link className="text-white" href="#about">
                   About
                 </Nav.Link>
-                <Nav.Link className="text-white" href="#home">
+                <Nav.Link className="text-white" href="#blog">
                   Blog
                 </Nav.Link>
               </Nav>
