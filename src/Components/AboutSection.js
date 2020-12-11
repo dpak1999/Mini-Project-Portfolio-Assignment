@@ -1,7 +1,17 @@
 import React from "react";
 import { Container, Media } from "react-bootstrap";
 
-const AboutSection = () => {
+const AboutSection = ({ home, socialLinks }) => {
+  const social = socialLinks.map((item) => {
+    return (
+      <Media as="li" key={item.name}>
+        <a href={item.url} target="_blank" rel="noreferrer">
+          <i className={item.className}></i>
+        </a>
+      </Media>
+    );
+  });
+
   return (
     <section className="home_banner_area">
       <Container className="container box_1620">
@@ -19,50 +29,32 @@ const AboutSection = () => {
               <Media.Body>
                 <div className="personal_text">
                   <h6>Hello Everybody, i am</h6>
-                  <h3>Donald McKinney</h3>
-                  <h4>Junior UI/UX Developer</h4>
+                  <h3>{home.name}</h3>
+                  <h4>{home.title}</h4>
                   <ul className="list-unstyled basic_info">
                     <Media as="li">
-                      <a href="#">
-                        <i className="icon-calendar"></i> 31st December, 1992
+                      <a href="/#">
+                        <i className="icon-calendar"></i> {home.dob}
                       </a>
                     </Media>
                     <Media as="li">
-                      <a href="#">
-                        <i className="icon-phone"></i> 44 (012) 6954 783
-                      </a>
-                    </Media>
-
-                    <Media as="li">
-                      <a href="#">
-                        <i className="icon-envelope"></i> businessplan@donald
+                      <a href="/#">
+                        <i className="icon-phone"></i> {home.contact}
                       </a>
                     </Media>
 
                     <Media as="li">
-                      <a href="#">
-                        <i className="icon-home"></i> Santa monica bullevard
+                      <a href="/#">
+                        <i className="icon-envelope"></i> {home.email}
+                      </a>
+                    </Media>
+                    <Media as="li">
+                      <a href="/#">
+                        <i className="icon-home"></i> {home.address}
                       </a>
                     </Media>
                   </ul>
-                  <ul className="list-unstyled personal_social">
-                    <Media as="li">
-                      <a href="#">
-                        <i class="fab fa-facebook-f"></i>
-                      </a>
-                    </Media>
-
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-linkedin"></i>
-                      </a>
-                    </li>
-                  </ul>
+                  <ul className="list-unstyled personal_social">{social}</ul>
                 </div>
               </Media.Body>
             </Media>

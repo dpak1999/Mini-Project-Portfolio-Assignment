@@ -2,13 +2,13 @@ import "./css/App.css";
 import React from "react";
 import NavbarComponent from "./Components/NavbarComponent";
 import AboutSection from "./Components/AboutSection";
-import { data } from "./portfolioData";
+import { home, socialLinks } from "./portfolioData";
 
 function App() {
   return (
     <div>
       <NavbarComponent />
-      <AboutSection />
+      <AboutSection home={home} socialLinks={socialLinks} />
     </div>
   );
 }
