@@ -61,3 +61,27 @@ export const skills = [
     level: 75,
   },
 ];
+
+export const projects = [
+  {
+    startDate: "Dec 2020",
+    endDate: "Dec 2020",
+    name: "Stopwatch",
+    desc: "A stopwatch app created using react",
+    link: "https://github.com/dpak1999/stopwatch-react",
+  },
+  {
+    startDate: "Sept 2020",
+    endDate: "Nov 2020",
+    name: "Coregad",
+    desc: "A e-comm web app created using MERN stack",
+    link: "https://github.com/dpak1999/core-gad",
+  },
+  {
+    startDate: "Dec 2020",
+    endDate: "Dec 2020",
+    name: "Image Generator",
+    desc: "A image genertor created using react and picsum api",
+    link: "https://github.com/dpak1999/Mini-Project-ImageGenerator-Assignment",
+  },
+];
