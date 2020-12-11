@@ -29,3 +29,35 @@ export const socialLinks = [
     className: "fab fa-github",
   },
 ];
+
+export const about = {
+  bio:
+    "inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed",
+};
+
+export const skills = [
+  {
+    name: "HTML5 & CSS3",
+    level: 90,
+  },
+  {
+    name: "ReactJs",
+    level: 75,
+  },
+  {
+    name: "Node JS",
+    level: 95,
+  },
+  {
+    name: "Git",
+    level: 90,
+  },
+  {
+    name: "MongoDB",
+    level: 80,
+  },
+  {
+    name: "Adobe XD",
+    level: 75,
+  },
+];
