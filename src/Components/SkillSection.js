@@ -4,7 +4,7 @@ import { Col, Container, Row, ProgressBar } from "react-bootstrap";
 const SkillSection = ({ about, skills }) => {
   const skill = skills.map((item) => {
     return (
-      <div className="skill_item">
+      <div className="skill_item" key={item.name}>
         <h4>{item.name}</h4>
         <ProgressBar>
           <ProgressBar now={item.level} min={0} max={100}></ProgressBar>

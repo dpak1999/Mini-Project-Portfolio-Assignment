@@ -85,3 +85,24 @@ export const projects = [
     link: "https://github.com/dpak1999/Mini-Project-ImageGenerator-Assignment",
   },
 ];
+
+export const blogs = [
+  {
+    name: "Week 4 of React....",
+    desc:
+      "Here i discussed about my week 4 experience at full stack camp and what I learnt.",
+    link: "https://dev.to/dpak1999/week-4-of-react-1ohp",
+  },
+  {
+    name: "Week 5 : API's and stuff....",
+    desc:
+      "This post describes about API in brief and how to fetch data from an external api.",
+    link: "https://dev.to/dpak1999/week-5-api-s-and-stuff-32bb",
+  },
+  {
+    name: "Coming soon",
+    desc:
+      " If you are looking at blank cassettes on the web, you may be very confused at the difference in price.",
+    link: "/#",
+  },
+];

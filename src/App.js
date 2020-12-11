@@ -3,9 +3,17 @@ import React from "react";
 import NavbarComponent from "./Components/NavbarComponent";
 import AboutSection from "./Components/AboutSection";
 import SkillSection from "./Components/SkillSection";
-
-import { home, socialLinks, about, skills, projects } from "./portfolioData";
 import ProjectSection from "./Components/ProjectSection";
+import BlogSection from "./Components/BlogSection";
+
+import {
+  home,
+  socialLinks,
+  about,
+  skills,
+  projects,
+  blogs,
+} from "./portfolioData";
 
 function App() {
   return (
@@ -14,6 +22,7 @@ function App() {
       <AboutSection home={home} socialLinks={socialLinks} />
       <SkillSection about={about} skills={skills} />
       <ProjectSection projects={projects} />
+      <BlogSection blogs={blogs} />
     </div>
   );
 }
