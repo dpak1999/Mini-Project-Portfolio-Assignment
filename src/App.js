@@ -1,17 +1,22 @@
-import logo from "./logo.svg";
-import "./css/App.css";
 import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import NavbarComponent from "./Components/NavbarComponent";
+import Footer from "./Components/Footer";
+import HomeScreen from "./Screens/HomeScreen";
+import AboutScreen from "./Screens/AboutScreen";
+import BlogScreen from "./Screens/BlogScreen";
+
+import { socialLinks } from "./portfolioData";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
-    </div>
+    <Router>
+      <NavbarComponent />
+      <Route path="/" exact component={HomeScreen} />
+      <Route path="/about" exact component={AboutScreen} />
+      <Route path="/blog" exact component={BlogScreen} />
+      <Footer socialLinks={socialLinks} />
+    </Router>
   );
 }
 
