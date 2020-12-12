@@ -11,13 +11,11 @@ import { socialLinks } from "./portfolioData";
 function App() {
   return (
     <Router>
-      <Route path="/" component={NavbarComponent} />
+      <NavbarComponent />
       <Route path="/" exact component={HomeScreen} />
       <Route path="/about" exact component={AboutScreen} />
       <Route path="/blog" exact component={BlogScreen} />
-      <Route path="/">
-        <Footer socialLinks={socialLinks} />
-      </Route>
+      <Footer socialLinks={socialLinks} />
     </Router>
   );
 }
