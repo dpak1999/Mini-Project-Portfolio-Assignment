@@ -1,4 +1,4 @@
-export const home = {
+export const personalDetails = {
   name: "Deepak Kumar Dash",
   title: "React JS Developer",
   dob: "29 November 1999",
@@ -38,27 +38,27 @@ export const about = {
 export const skills = [
   {
     name: "HTML5 & CSS3",
-    level: 90,
+    level: 75,
   },
   {
     name: "ReactJs",
-    level: 75,
+    level: 40,
   },
   {
     name: "Node JS",
-    level: 95,
+    level: 30,
   },
   {
     name: "Git",
-    level: 90,
+    level: 70,
   },
   {
     name: "MongoDB",
-    level: 80,
+    level: 20,
   },
   {
     name: "Adobe XD",
-    level: 75,
+    level: 65,
   },
 ];
 

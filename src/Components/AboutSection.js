@@ -1,7 +1,8 @@
 import React from "react";
 import { Container, Media } from "react-bootstrap";
+import { personalDetails, socialLinks } from "../portfolioData";
 
-const AboutSection = ({ home, socialLinks }) => {
+const AboutSection = () => {
   const social = socialLinks.map((item) => {
     return (
       <Media as="li" key={item.name}>
@@ -29,28 +30,29 @@ const AboutSection = ({ home, socialLinks }) => {
               <Media.Body>
                 <div className="personal_text">
                   <h6>Hello Everybody, i am</h6>
-                  <h3>{home.name}</h3>
-                  <h4>{home.title}</h4>
+                  <h3>{personalDetails.name}</h3>
+                  <h4>{personalDetails.title}</h4>
                   <ul className="list-unstyled basic_info">
                     <Media as="li">
                       <a href="/#">
-                        <i className="icon-calendar"></i> {home.dob}
+                        <i className="icon-calendar"></i> {personalDetails.dob}
                       </a>
                     </Media>
                     <Media as="li">
                       <a href="/#">
-                        <i className="icon-phone"></i> {home.contact}
+                        <i className="icon-phone"></i> {personalDetails.contact}
                       </a>
                     </Media>
 
                     <Media as="li">
                       <a href="/#">
-                        <i className="icon-envelope"></i> {home.email}
+                        <i className="icon-envelope"></i>{" "}
+                        {personalDetails.email}
                       </a>
                     </Media>
                     <Media as="li">
                       <a href="/#">
-                        <i className="icon-home"></i> {home.address}
+                        <i className="icon-home"></i> {personalDetails.address}
                       </a>
                     </Media>
                   </ul>

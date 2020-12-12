@@ -1,7 +1,8 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { blogs } from "../portfolioData";
 
-const BlogSection = ({ blogs }) => {
+const BlogSection = () => {
   const blog = blogs.map((item) => {
     return (
       <Col lg={4} md={6} key={item.name}>

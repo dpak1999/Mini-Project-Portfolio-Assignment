@@ -1,7 +1,8 @@
 import React from "react";
 import { Col, Container, Row, ProgressBar } from "react-bootstrap";
+import { about, skills } from "../portfolioData";
 
-const SkillSection = ({ about, skills }) => {
+const SkillSection = () => {
   const skill = skills.map((item) => {
     return (
       <div className="skill_item" key={item.name}>

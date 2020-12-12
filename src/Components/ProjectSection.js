@@ -1,7 +1,8 @@
 import React from "react";
 import { Container, Media } from "react-bootstrap";
+import { projects } from "../portfolioData";
 
-const ProjectSection = ({ projects }) => {
+const ProjectSection = () => {
   const project = projects.map((item) => {
     return (
       <li key={item.name}>
